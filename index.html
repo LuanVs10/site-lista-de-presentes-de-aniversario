@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes da Germanda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="title">🦷 23 aninhos da sua futura Dra. Germanda 🦷</h1>
+
+    <div class="contador">
+    <h2>🎂 Contagem regressiva para o meu aniversário 🎂</h2>
+    <p id="tempo"></p>
+</div>
+
+
+    <div class="intro">
+        <img src="img/germanda.jpeg" alt="Foto da Germanda" width="300" height="400">
+
+        <p class="saudacao">
+            Olá, queridos amigos e familiares!
+            <br>
+            Como vocês bem sabem, ter por perto o apoio das pessoas que amamos faz toda a diferença em cada etapa da nossa vida.
+            E nesta nova fase não poderia ser diferente.
+            Pensando nisso, preparei com muito carinho esta lista com alguns materiais que serão instrumentos essenciais para
+            o meu aprendizado e trabalho neste 5º semestre da faculdade.
+            Conto muito com o apoio de cada um de vocês e sou imensamente grata por caminharem comigo nessa jornada. ❤️
+        </p>
+    </div>
+</header>
+
+<div id="mensagem-aniversario" style="display: none;">
+    <h2>🎉 Feliz Aniversário, meu amor 🎉</h2>
+
+    <p class="declaracao">
+        Desde o dia em que você entrou na minha vida, tudo ficou mais leve,
+        mais bonito e cheio de sentido.
+        <br><br>
+        Tenho muito orgulho da mulher incrível que você é e da futura
+        doutora maravilhosa que está se tornando.
+        <br><br>
+        Que esse novo ano venha com ainda mais sonhos realizados,
+        sorrisos sinceros e conquistas.
+        <br><br>
+        Eu te amo ❤️
+    </p>
+
+    <button class="btn-fechar" onclick="fecharMensagem()">
+        Continuar navegando
+    </button>
+</div>
+
+
+<!-- <section class="mensagem">
+    <h3>
+        Organizei uma pequena lista de presentes com materiais da faculdade que me ajudariam muito.
+        Sintam-se totalmente à vontade para ajudar com o valor do material ou com outro presente de sua escolha.
+    </h3>
+</section> -->
+
+<section>
+<div class="lista-presentes">
+
+<!-- 1 -->
+<div class="presente" data-id="1">
+    <img src="img/presente 01.jpeg" alt="Fórceps 150">
+    <b>Fórceps Odontológico nº 150 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 2 -->
+<div class="presente" data-id="2">
+    <img src="img/presente 02.jpeg" alt="Fórceps 151">
+    <b>Fórceps Odontológico nº 151 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 3 -->
+<div class="presente" data-id="3">
+    <img src="img/presente 03.jpeg" alt="Fórceps 17">
+    <b>Fórceps Odontológico nº 17 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 4 -->
+<div class="presente" data-id="4">
+    <img src="img/presente 04.jpeg" alt="Fórceps 16">
+    <b>Fórceps Odontológico nº 16 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 5 -->
+<div class="presente" data-id="5">
+    <img src="img/presente 05.jpeg" alt="Fórceps 18">
+    <b>Fórceps Odontológico nº 18 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 6 -->
+<div class="presente" data-id="6">
+    <img src="img/presente 06.jpeg" alt="Fórceps 18L">
+    <b>Fórceps Odontológico nº 18 L - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 7 -->
+<div class="presente" data-id="7">
+    <img src="img/presente 07.jpeg" alt="Fórceps 69">
+    <b>Fórceps Odontológico nº 69 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 8 -->
+<div class="presente" data-id="8">
+    <img src="img/presente 08.jpeg" alt="Fórceps 01">
+    <b>Fórceps Odontológico nº 01 - Golgran</b><br>
+    <span class="valor">R$ 106,60</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 9 -->
+<div class="presente" data-id="9">
+    <img src="img/presente 09.jpeg" alt="Kit Alavanca Seldin">
+    <b>Kit Alavanca Seldin</b><br>
+    <span class="valor">R$ 150,25</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 10 -->
+<div class="presente" data-id="10">
+    <img src="img/presente 10.jpeg" alt="Pinça Allis">
+    <b>Pinça Allis</b><br>
+    <span class="valor">R$ 50,34</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 11 -->
+<div class="presente" data-id="11">
+    <img src="img/presente 11.jpeg" alt="Sindesmótomo">
+    <b>Sindesmótomo - Golgran</b><br>
+    <span class="valor">R$ 23,18</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 12 -->
+<div class="presente" data-id="12">
+    <img src="img/presente 12.jpeg" alt="Cureta de Molt">
+    <b>Cureta de Molt</b><br>
+    <span class="valor">R$ 62,95</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 13 -->
+<div class="presente" data-id="13">
+    <img src="img/presente 13.jpeg" alt="Seringa Carpule">
+    <b>Seringa Carpule</b><br>
+    <span class="valor">R$ 50,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 14 -->
+<div class="presente" data-id="14">
+    <img src="img/presente 14.jpeg" alt="Porta Agulha">
+    <b>Porta agulha de Mayo Hegar - Golgran</b><br>
+    <span class="valor">R$ 45,49</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 15 -->
+<div class="presente" data-id="15">
+    <img src="img/presente 15.jpeg" alt="Pinça Dente de Rato">
+    <b>Pinça Dente de Rato - Golgran</b><br>
+    <span class="valor">R$ 25,12</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 16 -->
+<div class="presente" data-id="16">
+    <img src="img/presente 16.jpeg" alt="Pinça Standard">
+    <b>Pinça Standard Reta - Golgran</b><br>
+    <span class="valor">R$ 21,24</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 17 -->
+<div class="presente" data-id="17">
+    <img src="img/presente 17.jpeg" alt="Fio de sutura">
+    <b>Fio de sutura Nylon</b><br>
+    <span class="valor">R$ 48,40</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 18 -->
+<div class="presente" data-id="18">
+    <img src="img/presente 18.jpeg" alt="Broca 701">
+    <b>Broca carbide cirúrgica esférica nº 701</b><br>
+    <span class="valor">R$ 22,21</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 19 -->
+<div class="presente" data-id="19">
+    <img src="img/presente 19.jpeg" alt="Broca 702">
+    <b>Broca carbide cirúrgica esférica nº 702</b><br>
+    <span class="valor">R$ 22,21</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 20 -->
+<div class="presente" data-id="20">
+    <img src="img/presente 20.jpeg" alt="Broca 1014">
+    <b>Broca Diamantada esférica nº 1014 HL (4 unidades)</b><br>
+    <span class="valor">R$ 24,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 21 -->
+<div class="presente" data-id="21">
+    <img src="img/presente 21.jpeg" alt="Brocas Endo Z">
+    <b>Brocas Endo Z</b><br>
+    <span class="valor">R$ 65,86</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 22 -->
+<div class="presente" data-id="22">
+    <img src="img/presente 22.jpeg" alt="Cone Guta Percha F">
+    <b>Cone Guta Percha Acessória - nº F</b><br>
+    <span class="valor">R$ 38,70</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 23 -->
+<div class="presente" data-id="23">
+    <img src="img/presente 23.jpeg" alt="Cone Guta Percha FM">
+    <b>Cone Guta Percha Acessória - nº FM</b><br>
+    <span class="valor">R$ 38,70</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 24 -->
+<div class="presente" data-id="24">
+    <img src="img/presente 24.jpeg" alt="Seringa 10ml">
+    <b>Seringa descartável 10ML - 10 unidades</b><br>
+    <span class="valor">R$ 38,70</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 25 -->
+<div class="presente" data-id="25">
+    <img src="img/presente 25.jpeg" alt="Kit Endo">
+    <b>Kit Endo Irrigação e Aspiração</b><br>
+    <span class="valor">R$ 76,53</span><br>
+   <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 26 -->
+<div class="presente" data-id="26">
+    <img src="img/presente 26.jpeg" alt="Tamborel">
+    <b>Tamborel de Plástico</b><br>
+    <span class="valor">R$ 29,96</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 27 -->
+<div class="presente" data-id="27">
+    <img src="img/presente 27.jpeg" alt="Régua Endodôntica">
+    <b>Régua Endodôntica Milimetrada Calibradora</b><br>
+    <span class="valor">R$ 17,36</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 28 -->
+<div class="presente" data-id="28">
+    <img src="img/presente 28.jpeg" alt="Maleta organizadora odontológica">
+    <b>Maleta organizadora odontológica</b><br>
+    <span class="valor">R$ 88,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 29 -->
+<div class="presente" data-id="29">
+    <img src="img/presente 29.jpeg" alt="Escova Robinson Cônica">
+    <b>Escova Robinson Cônica</b><br>
+    <span class="valor">R$ 40,65</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 30 -->
+<div class="presente" data-id="30">
+    <img src="img/presente 30.jpeg" alt="Luva de Procedimento de Látex com Pó">
+    <b>Luva de Procedimento de Látex com Pó</b><br>
+    <span class="valor">R$ 34,99</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 31 -->
+<div class="presente" data-id="31">
+    <img src="img/presente 31.jpeg" alt="Babador impermeável">
+    <b>Babador impermeável </b><br>
+    <span class="valor">R$ 20,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 32 -->
+<div class="presente" data-id="32">
+    <img src="img/presente 32.jpeg" alt="Kit Acabamento e Polimento de Resina Completo">
+    <b>Kit Acabamento e Polimento de Resina Completo</b><br>
+    <span class="valor">R$ 239,99</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 33 -->
+<div class="presente" data-id="33">
+    <img src="img/presente 33.jpeg" alt="Ultrassom Sônico Odontológico para remoção de tártaro">
+    <b>Ultrassom Sônico Odontológico para remoção de tártaro</b><br>
+    <span class="valor">R$ 135,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 34 -->
+<div class="presente" data-id="34">
+    <img src="img/presente 34.jpeg" alt="Bandeja inox">
+    <b>Bandeja inox</b><br>
+    <span class="valor">R$ 40,65</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+<!-- 35 -->
+<div class="presente" data-id="35">
+    <img src="img/presente 35.jpeg" alt="Lençol de borracha">
+    <b>Lençol de borracha</b><br>
+    <span class="valor">R$ 21,00</span><br>
+    <a href="pix.html">
+        <button>Comprar presente 🦷</button>
+    </a>
+</div>
+
+</div>
+</section>
+
+<footer>
+    <img class="foto" src="img/bonita.jpeg" alt="eu">
+    <p class="despedida">Queria agradecer a presença de voces e o carinho, obrigado por tudo❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
