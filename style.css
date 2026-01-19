@@ -336,3 +336,6 @@ footer .despedida {
     }
 }
 
+#mensagem-aniversario {
+    display: none !important;
+}
