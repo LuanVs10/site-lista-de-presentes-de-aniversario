@@ -16,12 +16,12 @@ function atualizarContador() {
 
     // Chegou o dia
     if (diferenca <= 0) {
-        tempo.innerText = "🎉 Hoje é o aniversário dela! da mulher da minha vida, ass: Luan 🎉";
+        tempo.innerText = "🎉 Hoje 19/01 é o aniversário dela! da mulher da minha vida, ass: Luan, eu te amo❤️";
 
-        if (!mensagemMostrada) {
-            mostrarMensagemAniversario();
-            mensagemMostrada = true;
-        }
+        // if (!mensagemMostrada) {
+        //     mostrarMensagemAniversario();
+        //     mensagemMostrada = true;
+        // }
         return;
     }
 
