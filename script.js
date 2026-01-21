@@ -1,7 +1,7 @@
 /*********************************
  * DATA DO ANIVERSÁRIO
  *********************************/
-const dataAniversario = new Date("2026-01-19T00:00:00");
+const dataAniversario = new Date("2026-02-01T00:00:00");
 let mensagemMostrada = false;
 
 /*********************************
@@ -16,7 +16,7 @@ function atualizarContador() {
 
     // Chegou o dia
     if (diferenca <= 0) {
-        tempo.innerText = "🎉 Hoje 19/01 é o aniversário dela! da mulher da minha vida, ass: Luan, eu te amo❤️";
+        tempo.innerText = "Chegou o dia de celebrar! Já tô te esperando, hein 🎉";
 
         // if (!mensagemMostrada) {
         //     mostrarMensagemAniversario();
