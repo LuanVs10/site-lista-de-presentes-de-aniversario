@@ -1,7 +1,7 @@
 /*********************************
  * DATA DO ANIVERSÁRIO
  *********************************/
-const dataAniversario = new Date("2026-02-01T00:00:00");
+const dataAniversario = new Date("2027-01-01T00:00:00");
 let mensagemMostrada = false;
 
 /*********************************
